@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar" style={{ padding: "10px" }}>
-      <Link to="/home" style={{ padding: "10px" }}>
-        home
+      <Link to="/" style={{ padding: "10px" }}>
+        shop
       </Link>
+
       <Link to="/cart" style={{ padding: "10px" }}>
         cart
       </Link>
