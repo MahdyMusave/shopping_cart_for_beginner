@@ -1,4 +1,5 @@
 import React from "react";
+import { Products } from "../products";
 import Product from "../component/product";
 const Shop = () => {
   return (
@@ -8,7 +9,13 @@ const Shop = () => {
           <h1>PedroTech Shop</h1>
         </div>
         <div className="products">
-          <Product />
+          <div className="product-row">
+            {Products.map((pro) => (
+              <div className="product-col" key={pro.productId}>
+                <Product data={pro} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
